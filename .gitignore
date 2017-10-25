@@ -1,0 +1,6 @@
+
+# vc
+.svn
+.git
+.vscode
+node_modules
