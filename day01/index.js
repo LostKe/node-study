@@ -1,3 +1,5 @@
+//使用eventproxy并发异步抓取数据
+
 var express=require("express");
 var superAgent=require("superagent");
 var cheerio=require("cheerio");
@@ -40,7 +42,7 @@ app.get("/",function(request,response,next){
                 });
             });
             console.log('final:');
-            console.log(topics);
+           // console.log(topics);
            response.send(topics);
         });
 
