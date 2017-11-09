@@ -8,7 +8,7 @@ var con_current_count=0;
 var fetchUrl=function(url,callback){
     var delay=parseInt((Math.random()*10000000)%200,10);
     con_current_count++;
-    console.log("现在的并发数:%d,正在抓取的是:%s,耗时:%d 毫秒",con_current_count,url,delay);
+    console.log("现在的并发数:%d,正在抓取的是:%s,耗时:%d 毫秒,%s",con_current_count,url,delay,new Date().getTime());
     setTimeout(function(){
         con_current_count--;
         callback(null,url+"html content");
