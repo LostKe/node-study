@@ -8,6 +8,7 @@ hello.sayHello("小明");
 
 
 function add(x,y){
+    console.log("%d + %d=%d",x,y,x+y);
     return x+y;
 }
 
