@@ -1,3 +1,4 @@
+//nodejs 的模块
 
 var Hello=require("./hello");
 
